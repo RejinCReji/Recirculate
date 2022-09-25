@@ -1,11 +1,25 @@
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import HomePage from './Screens/HomePage';
+import ProductView from './Screens/ProductView';
 function App() {
   return (
-    <div>
-      <header>
-        <a href="/">recirculate</a>
-      </header>
-      <main>list products</main>
-    </div>
+    <BrowserRouter>
+      <div>
+        <header>
+          <Link to="/">Recirculate</Link>
+        </header>
+        <main>
+          <h1>Products</h1>
+        </main>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+
+            <Route path="/product/:slug" element={<ProductView />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
