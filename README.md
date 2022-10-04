@@ -49,3 +49,13 @@
     1. fetch product from backend
     2. create 3 columns for image, info and action
     3. change the title of Product page
+13. Creating loading and messaging component
+    1. Create loading component
+    2. use spinner component
+    3. craete message component
+    4. create utils.js to define getError fuction
+14. Create React Context For Add Item To Cart
+    1. Create React Context
+    2. define reducer
+    3. create store provider
+    4. implement add to cart button click handler

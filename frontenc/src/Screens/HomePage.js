@@ -7,6 +7,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from '../Components/Product';
 import { Helmet } from 'react-helmet-async';
+import LoadingBox from '../Components/LoadingBox';
+import ErrorMessage from '../Components/ErrorMessage';
+import { getError } from '../utils';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -35,7 +38,7 @@ function HomePage() {
         const result = await axios.get('/api/products');
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
-        dispatch({ type: 'FETCH_FAIL', payload: err.message });
+        dispatch({ type: 'FETCH_FAIL', payload: getError(err) });
       }
 
       // setProduct(result.data);
@@ -50,9 +53,9 @@ function HomePage() {
       <h1>Featured</h1>
       <div className="products">
         {loading ? (
-          <div> Loading...</div>
+          <LoadingBox />
         ) : error ? (
-          <div>Error!</div>
+          <ErrorMessage variant="danger">{error}</ErrorMessage>
         ) : (
           <Row>
             {products.map((product) => (
