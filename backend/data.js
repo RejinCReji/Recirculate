@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'Maths',
       Scheme: '2019',
       slug: 'Maths-S1',
@@ -9,10 +10,11 @@ const data = {
       seller: 'Team-Recirculate',
       rating: 4.7,
       numRating: 120,
-      countInStock: 15,
+      countInStock: 4,
       discription: 'This is S1 text book',
     },
     {
+      _id: '2',
       name: 'Graphic',
       Scheme: '2019',
       slug: 'Graphics-S1',
@@ -26,6 +28,7 @@ const data = {
       discription: 'This is S1 text book',
     },
     {
+      _id: '3',
       name: 'Maths',
       Scheme: '2019',
       slug: 'Maths-S2',
@@ -38,6 +41,7 @@ const data = {
       discription: 'This is S1 text book',
     },
     {
+      _id: '4',
       name: 'Graphic',
       Scheme: '2019',
       slug: 'Graphics-S2',

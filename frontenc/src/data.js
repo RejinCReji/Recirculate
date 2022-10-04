@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'Maths',
       Scheme: '2019',
       slug: 'Maths-S1',
@@ -12,6 +13,7 @@ const data = {
       disciption: 'This is S1 text book',
     },
     {
+      _id: '2',
       name: 'Graphic',
       Scheme: '2019',
       slug: 'Graphics-S1',
@@ -24,6 +26,7 @@ const data = {
       disciption: 'This is S1 text book',
     },
     {
+      _id: '3',
       name: 'Maths',
       Scheme: '2019',
       slug: 'Maths-S1',
@@ -35,6 +38,7 @@ const data = {
       disciption: 'This is S1 text book',
     },
     {
+      _id: '4',
       name: 'Graphic',
       Scheme: '2019',
       slug: 'Graphics-S1',
