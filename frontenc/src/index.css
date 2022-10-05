@@ -40,3 +40,6 @@ main {
 .label-wrapper {
   font-weight: bold !important;
 }
+.img-thumbnail {
+  height: 5rem;
+}

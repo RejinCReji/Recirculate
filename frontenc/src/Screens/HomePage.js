@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Product from '../Components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../Components/LoadingBox';
-import ErrorMessage from '../Components/ErrorMessage';
+import ErrorMessage from '../Components/MessageBox';
 import { getError } from '../utils';
 
 const reducer = (state, action) => {
