@@ -1,7 +1,19 @@
 import express from 'express';
 import data from './data.js';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 const app = express();
 //test
+
+dotenv.config();
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log('Connected to DB');
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
