@@ -43,3 +43,7 @@ main {
 .img-thumbnail {
   height: 5rem;
 }
+.small-container {
+  max-width: 25rem;
+  /* max-width: 600px; */
+}
