@@ -7,7 +7,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Link, useNavigate } from 'react-router-dom';
 import MessageBox from '../Components/MessageBox';
 import { Store } from '../Store';
-
 import Button from 'react-bootstrap/esm/Button';
 import axios from 'axios';
 
@@ -70,6 +69,7 @@ export default function CartSection() {
                           }
                           variant="light"
                           disabled={item.quantity === 1}
+                          className="Icon-Quantity"
                         >
                           <i className="fas fa-minus-circle"></i>
                         </Button>{' '}
@@ -80,6 +80,7 @@ export default function CartSection() {
                           }
                           variant="light"
                           disabled={item.countInStock === item.quantity}
+                          className="Icon-Quantity"
                         >
                           <i className="fas fa-plus-circle"></i>
                         </Button>
@@ -90,6 +91,7 @@ export default function CartSection() {
                       <Button
                         onClick={() => removeItemHandler(item)}
                         variant="light"
+                        className="Icon-Trash"
                       >
                         <i className="fas fa-trash"></i>
                       </Button>

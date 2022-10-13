@@ -47,3 +47,9 @@ main {
   max-width: 25rem;
   /* max-width: 600px; */
 }
+.Icon-Trash {
+  border-radius: 60%;
+}
+.Icon-Quantity {
+  border-radius: 48%;
+}

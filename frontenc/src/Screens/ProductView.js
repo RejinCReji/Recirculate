@@ -85,7 +85,7 @@ function ProductView() {
               <h1>{product.name}</h1>
             </ListGroup.Item>
             <ListGroup.Item>
-              <Rating numRating={product.numRating} rating={product.rating} />
+              <Rating numReviews={product.numReviews} rating={product.rating} />
             </ListGroup.Item>
             <ListGroup.Item>Price: ₹{product.price}</ListGroup.Item>
             <ListGroup.Item>
