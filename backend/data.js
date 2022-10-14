@@ -44,7 +44,7 @@ const data = {
     },
     {
       // _id: '4',
-      name: 'GraphicS2',
+      name: 'Graphic S2',
       scheme: '2019',
       slug: 'Graphics-S2',
       category: 'BTECH-KTU',

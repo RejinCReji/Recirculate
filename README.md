@@ -84,3 +84,10 @@
     2. create seed route
     3. use route in server.js
     4. seed sample product
+21. Seed Sample Users
+    1. create user model
+    2. seed sample users
+22. Create Signin Backend API
+    1. create signin api
+    2. npm install jsonwebtoken
+    3. define generateToken
